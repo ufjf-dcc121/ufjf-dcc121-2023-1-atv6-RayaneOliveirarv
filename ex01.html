@@ -12,9 +12,14 @@
     <p id="terceiro">?</p>
 
     <script>
-         let.conteudo()
-         const p= document.getElementById('primeiro');
-         const p= document.getElementById('segundo');
+         const primeiro = document.getElementById('primeiro');
+         const segundo = document.getElementById('segundo');
+         const terceiro = document.getElementById('terceiro');
+         const v1= Number(primeiro.innerText);
+         const v2 = Number(segundo.innerText);
+         const resultado = v1+v2;
+
+         terceiro.innerText = `A soma de ${v1}+${v2} é ${resultado}`;
     </script>
 </body>
 </html>
