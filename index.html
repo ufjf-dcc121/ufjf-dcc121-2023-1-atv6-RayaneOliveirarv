@@ -11,13 +11,13 @@
     <h1>DCC121 ATV6</h1>
 </header>
 <main>
-     <p> A pessoa NOME tem X anos! </p>
+     <p id="saida"> A pessoa NOME tem X anos! </p>
 </main>
 <footer>
     &copy; Rayane Oliveira - 2023
 </footer>
 <script>
-    console.log('Hello, word!');
+    console.log('Hello, world!');
     let pessoa;
     pessoa = {
         id: 1,
@@ -29,6 +29,11 @@
     };
     pessoa.envelhecer();
     console.log(pessoa);
+    const p= document.getElementById('saida');
+    
+    console.log(p);
+    p.innerText = `A pessoa ${pessoa.nome} tem ${pessoa.idade} anos!`;
+    
 </script>
 </body>
 </html>
