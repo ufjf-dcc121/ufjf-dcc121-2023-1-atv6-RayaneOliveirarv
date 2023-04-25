@@ -11,7 +11,7 @@
     <h1>DCC121 ATV6</h1>
 </header>
 <main>
-
+     <p> A pessoa NOME tem X anos! </p>
 </main>
 <footer>
     &copy; Rayane Oliveira - 2023
@@ -22,11 +22,12 @@
     pessoa = {
         id: 1,
         nome: 'Fulano',
-        idade = 15,
-        envelhecer: function(){
+        idade: 15,
+        envelhecer: function (){
             this.idade++;
         }
     };
+    pessoa.envelhecer();
     console.log(pessoa);
 </script>
 </body>
